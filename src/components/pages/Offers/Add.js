@@ -30,7 +30,7 @@ export const AddOfferPage = () => {
 
   const handleSave = async (data) => {
     const dataOffer = parseDataOffer(data);
-    post('/offers', dataOffer, user.data.token)
+    await post('/offers', dataOffer, user.data.token)
       .then((response) => {
         if (response.data === null) {
           toast.error(response.errors.msg);

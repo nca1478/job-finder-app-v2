@@ -12,7 +12,7 @@ import { SelectForm } from '../SelectForm';
 
 export const Step3 = (props) => {
   const { handleSave, formValues, setFormValues } = props;
-  const [countryOptions, setCountryOptions] = useState(null);
+  const [countryOptions, setCountryOptions] = useState([]);
   const {
     register,
     handleSubmit,

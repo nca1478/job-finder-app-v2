@@ -60,10 +60,14 @@ export const DashboardPage = () => {
     initialFetchOffers().catch(console.error);
   }, [initialFetchOffers]);
 
-  const handlePublish = (id, published) => {
+  const handlePublish = async (id, published) => {
     const isPublished = published === false ? 'true' : 'false';
 
-    put(`/offers/${id}/publish?status=${isPublished}`, {}, user.data.token)
+    await put(
+      `/offers/${id}/publish?status=${isPublished}`,
+      {},
+      user.data.token,
+    )
       .then((response) => {
         if (response.data === null) {
           toast.error(response.errors.msg);
@@ -80,10 +84,10 @@ export const DashboardPage = () => {
       });
   };
 
-  const handleDelete = (offerId) => {
+  const handleDelete = async (offerId) => {
     const confirm = window.confirm('¿Estás Seguro?');
     if (confirm) {
-      del(`/offers/${offerId}`, user.data.token)
+      await del(`/offers/${offerId}`, user.data.token)
         .then((response) => {
           if (response.data === null) {
             toast.error(response.errors.msg);
