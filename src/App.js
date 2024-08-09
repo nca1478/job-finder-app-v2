@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+// Dependencies
+import React, { useEffect, useReducer } from 'react';
+import { AppRoutes } from './routes/AppRoutes';
+import { AuthContext } from './auth/authContext';
+import { authReducer } from './auth/authReducer';
+
+// Styles
 import './App.css';
+import 'react-toastify/dist/ReactToastify.css';
 
-function App() {
+const init = () => {
+  return JSON.parse(sessionStorage.getItem('user')) || { logged: false };
+};
+
+export const App = () => {
+  const [user, dispatch] = useReducer(authReducer, {}, init);
+
+  useEffect(() => {
+    if (!user) return;
+
+    sessionStorage.setItem('user', JSON.stringify(user));
+  }, [user]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthContext.Provider value={{ user, dispatch }}>
+      <AppRoutes />
+    </AuthContext.Provider>
   );
-}
-
-export default App;
+};

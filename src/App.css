@@ -1,34 +1,79 @@
-.App {
-  text-align: center;
+/* Main styles */
+.card {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.selectform {
+  z-index: 1000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* User Login styles */
+.facebook-button {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  background-color: #4c69ba;
   color: white;
+  border: none;
+  padding: 8px 20px;
+  margin-top: 10px;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.facebook-button span {
+  margin-left: 10px;
 }
 
-@keyframes App-logo-spin {
+.facebook-button:hover {
+  filter: brightness(110%);
+  transition: all 0.5s;
+}
+
+/* User Profile styles */
+.react-datetime-picker__wrapper {
+  border-style: none;
+}
+
+.documentPdf {
+  width: 100px;
+}
+
+/* Not Found styles*/
+.text-404 {
+  font-size: 6rem;
+}
+
+/* Progress Bar */
+.progress-bar {
+  font-weight: bold;
+}
+
+/* Preloader */
+.preloader-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.preloader {
+  width: 70px;
+  height: 70px;
+  border: 10px solid #eee;
+  border-top: 10px solid #666;
+  border-radius: 50%;
+  animation-name: rotatePreloader;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotatePreloader {
   from {
     transform: rotate(0deg);
   }
