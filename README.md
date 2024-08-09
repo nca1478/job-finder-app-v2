@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Jobfinder App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+`Jobfinder App` es una aplicación web que te permite publicar tus trabajos y contactar a personas interesadas en todo el mundo..
 
-## Available Scripts
+## Características
 
-In the project directory, you can run:
+- Página Principal con información básica acerca del sitio.
+- Secciones acerca como trabaja la app.
+- Lista de Ofertas de Trabajo publicadas.
+- Caja de búsqueda de ofertas de trabajo.
+- Autenticación Local, Google y Facebook.
+- Formulario de Registro y Recuperación de contraseña.
+- Notificaciones por Correo.
+- Formularios de registros de ofertas de trabajo.
+- Posteo sencillo del trabajo desde el Dashboard del usuario.
+- Acceso sencillo a los detalles de la oferta de trabajo.
+- Contacto sencillo con freelancers, solo debe está registrado en el sitio web.
+- Imagenes alojadas en Cloudinary.
 
-### `npm start`
+## Características Técnicas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- UI desarrollada en ReactJS y React Bootstrap.
+- Stack Backend: NodeJS, Express and Sequelize.
+- Base de Datos: Postgres SQL.
+- Rutas públicas y privadas con React Router v6.
+- Manejo de estados con el hook useState.
+- Manejo de estado global con el hook useContext.
+- Manejo de formularios a través de React Hook Forms.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Información General
 
-### `npm test`
+- El propósito de este proyecto es practicar las tecnologías web que se muestran a continuación.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+- HTML5.
+- CSS3.
+- Bootstrap CSS Framework.
+- Responsive Design.
+- ReactJS.
+- React Bootstrap UI Framework.
+- NodeJS.
+- Postgres SQL.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tecnologías React
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Create React App](https://create-react-app.dev/)
+- [React Bootstrap](https://react-bootstrap.github.io/)
+- [React Datetime Picker](https://www.npmjs.com/package/react-datetime-picker)
+- [React Facebook Login](https://www.npmjs.com/package/react-facebook-login)
+- [React Google Login](https://www.npmjs.com/package/react-google-login)
+- [React Hook Form](https://react-hook-form.com/)
+- [React Paginate](https://www.npmjs.com/package/react-paginate)
+- [React Router Bootstrap](https://www.npmjs.com/package/react-router-bootstrap)
+- [React Router v6](https://reactrouter.com/)
+- [React Select](https://react-select.com/home)
+- [React Toastify](https://fkhadra.github.io/react-toastify/introduction)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Herramientas de Desarrollo y Otras Tecnologías
 
-### `npm run eject`
+- [Animate.css](https://animate.style/)
+- [Bootstrap 5.0](https://getbootstrap.com/)
+- [Bootstrap Icons](https://icons.getbootstrap.com/)
+- [Cloudinary](https://cloudinary.com/)
+- [Json Web Token](https://jwt.io/)
+- [Nodejs](https://nodejs.org/en/)
+- [Momentjs](https://momentjs.com/)
+- [Query String](https://www.npmjs.com/package/query-string)
+- [Vscode](https://code.visualstudio.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Demo
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Jobfinder App](https://jobfinder-app-njca.netlify.app/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Repo Backend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [Jobfinder Api](https://github.com/nca1478/job-finder-api)
 
-## Learn More
+## Requerimientos
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Nodejs v14 o superior.
+- React 17.0.2 o superior.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Instalación
 
-### Code Splitting
+> npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Ejecutar la Aplicación
 
-### Analyzing the Bundle Size
+> npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Archivo de Entrada
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> /src/index.js
