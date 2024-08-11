@@ -4,7 +4,7 @@ import { Row, Col, Container, Alert } from 'react-bootstrap';
 import { ToastContainer, toast } from 'react-toastify';
 
 // Custom Dependencies
-import { post } from '../../../config/api';
+import { get } from '../../../config/api';
 import { OfferItem } from '../../common/OfferItem';
 import { Showcase } from '../../common/Showcase';
 import { SpinnerBorder } from '../../common/Spinners/SpinnerBorder';
@@ -18,9 +18,7 @@ export const HomePage = () => {
   const [loaded, setLoaded] = useState(false);
 
   const fetchOffers = useCallback(async () => {
-    await post(`/offers/published?order=DESC&take=${lastOffers}`, {
-      status: true,
-    })
+    await get(`/offers/published?order=DESC&take=${lastOffers}`)
       .then((response) => {
         if (response.data === null) {
           toast.error(response.errors.msg);
