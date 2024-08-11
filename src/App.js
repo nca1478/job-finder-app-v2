@@ -7,6 +7,9 @@ import { authReducer } from './auth/authReducer';
 // Styles
 import './App.css';
 import 'react-toastify/dist/ReactToastify.css';
+import 'react-datetime-picker/dist/DateTimePicker.css';
+import 'react-calendar/dist/Calendar.css';
+import 'react-clock/dist/Clock.css';
 
 const init = () => {
   return JSON.parse(sessionStorage.getItem('user')) || { logged: false };

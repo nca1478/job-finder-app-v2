@@ -33,7 +33,7 @@
 }
 
 /* User Profile styles */
-.react-datetime-picker__wrapper {
+div.react-datetime-picker__wrapper {
   border-style: none;
 }
 
