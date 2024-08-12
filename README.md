@@ -81,6 +81,10 @@
 - Nodejs v20.
 - React 18.
 
+## Variables de entorno
+
+> renombrar .env.example a .env y colocar los keys de los servicios.
+
 ## Instalación
 
 > npm install
