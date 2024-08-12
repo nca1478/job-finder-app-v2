@@ -1,4 +1,4 @@
-# Jobfinder App
+# Jobfinder App v2.0
 
 `Jobfinder App` es una aplicación web que te permite publicar tus trabajos y contactar a personas interesadas en todo el mundo..
 
@@ -20,7 +20,7 @@
 ## Características Técnicas
 
 - UI desarrollada en ReactJS y React Bootstrap.
-- Stack Backend: NodeJS, Express and Sequelize.
+- Stack Backend: NestJS, Express and Typeorm.
 - Base de Datos: Postgres SQL.
 - Rutas públicas y privadas con React Router v6.
 - Manejo de estados con el hook useState.
@@ -40,6 +40,7 @@
 - ReactJS.
 - React Bootstrap UI Framework.
 - NodeJS.
+- NestJS.
 - Postgres SQL.
 
 ## Tecnologías React
@@ -47,8 +48,6 @@
 - [Create React App](https://create-react-app.dev/)
 - [React Bootstrap](https://react-bootstrap.github.io/)
 - [React Datetime Picker](https://www.npmjs.com/package/react-datetime-picker)
-- [React Facebook Login](https://www.npmjs.com/package/react-facebook-login)
-- [React Google Login](https://www.npmjs.com/package/react-google-login)
 - [React Hook Form](https://react-hook-form.com/)
 - [React Paginate](https://www.npmjs.com/package/react-paginate)
 - [React Router Bootstrap](https://www.npmjs.com/package/react-router-bootstrap)
@@ -63,6 +62,7 @@
 - [Bootstrap Icons](https://icons.getbootstrap.com/)
 - [Cloudinary](https://cloudinary.com/)
 - [Json Web Token](https://jwt.io/)
+- [Nestjs](https://nestjs.com/)
 - [Nodejs](https://nodejs.org/en/)
 - [Momentjs](https://momentjs.com/)
 - [Query String](https://www.npmjs.com/package/query-string)
@@ -70,16 +70,16 @@
 
 ## Demo
 
-- [Jobfinder App](https://jobfinder-app-njca.netlify.app/)
+- [Jobfinder App v2.0](https://jobfinder-app-v2.netlify.app/)
 
 ## Repo Backend
 
-- [Jobfinder Api](https://github.com/nca1478/job-finder-api)
+- [Jobfinder Api v2.0](https://github.com/nca1478/job-finder-api-v2)
 
 ## Requerimientos
 
-- Nodejs v14 o superior.
-- React 17.0.2 o superior.
+- Nodejs v20.
+- React 18.
 
 ## Instalación
 
