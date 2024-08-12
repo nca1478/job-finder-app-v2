@@ -4,7 +4,7 @@ import { Row, Col, Container, Alert } from 'react-bootstrap';
 import { ToastContainer, toast } from 'react-toastify';
 
 // Custom Dependencies
-import { post } from '../../../config/api';
+import { get } from '../../../config/api';
 import { OfferItem } from '../../common/OfferItem';
 import { SpinnerBorder } from '../../common/Spinners/SpinnerBorder';
 import { Paginate } from '../../common/Paginate/Paginate';
@@ -16,9 +16,7 @@ export const OffersPage = () => {
   const limit = 8;
 
   const initialFetchOffers = useCallback(async () => {
-    await post(`/offers/published?order=DESC&page=1&take=${limit}`, {
-      status: true,
-    })
+    await get(`/offers/published?order=DESC&page=1&take=${limit}`)
       .then((response) => {
         if (response.data === null) {
           toast.error(response.errors.msg);
@@ -42,9 +40,7 @@ export const OffersPage = () => {
   }, [initialFetchOffers]);
 
   const fetchOffers = async (currentPage) => {
-    post(`/offers/published?order=DESC&page=${currentPage}&take=${limit}`, {
-      status: true,
-    })
+    await get(`/offers/published?order=DESC&page=${currentPage}&take=${limit}`)
       .then((response) => {
         if (response.data === null) {
           toast.error(response.errors.msg);
