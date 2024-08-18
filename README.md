@@ -78,21 +78,23 @@
 
 ## Requerimientos
 
-- Nodejs v20.
-- React 18.
-
-## Variables de entorno
-
-> renombrar .env.example a .env y colocar los keys de los servicios.
+- Nodejs v20 o superior.
+- Docker Desktop.
 
 ## Instalación
 
-> npm install
+## Variables de entorno
 
-## Ejecutar la Aplicación
+- Renombrar .env.example a .env.
+- Agregar los valores de las credenciales al .env.
+- Actualizar la variable `REACT_APP_API_URL` con la url de la api.
 
-> npm start
+## Instalar aplicación
+
+- Ejecutar el comando: `docker compose up --build -d`
+- Para eliminar: `docker compose down --volumes`
+- Url app: `http://localhost:3000`
 
 ## Archivo de Entrada
 
-> /src/index.js
+> src/index.js
