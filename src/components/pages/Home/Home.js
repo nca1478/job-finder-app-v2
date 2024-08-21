@@ -18,16 +18,18 @@ export const HomePage = () => {
   const [loaded, setLoaded] = useState(false);
 
   const fetchOffers = useCallback(async () => {
+    const message = 'Intente en 10 segundos y actualice la vista con F5.';
+
     await get(`/offers/published?order=DESC&take=${lastOffers}`)
       .then((response) => {
         if (response.data === null) {
-          toast.error(response.errors.msg);
+          toast.error(message);
         } else {
           setOffers(response.data);
         }
       })
       .catch((error) => {
-        toast.error('Error al intentar obtener ofertas de trabajo.');
+        toast.error(message);
         console.log(error);
       })
       .finally(() => {
