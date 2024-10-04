@@ -87,13 +87,23 @@
 
 - Renombrar .env.example a .env.
 - Agregar los valores de las credenciales al .env.
-- Actualizar la variable `REACT_APP_API_URL` con la url de la api.
+- Actualizar la variable `REACT_APP_API_URL` con la url de la api (dev o prod).
 
-## Instalar aplicación
+## Ejecutar la app (dev):
 
-- Ejecutar el comando: `docker compose up --build -d`
-- Para eliminar: `docker compose down --volumes`
-- Url app: `http://localhost:3000`
+- Ejecutar `docker compose up --build -d`
+
+## Ejecutar la app (prod):
+
+- Ejecutar `docker compose -f docker-compose.prod.yml up --build -d`
+
+## Eliminar container:
+
+- `docker compose down --volumes`
+
+## Url app (local):
+
+- `http://localhost:3000`
 
 ## Archivo de Entrada
 
